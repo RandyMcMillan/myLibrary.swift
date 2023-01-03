@@ -1,7 +1,7 @@
 import XCTest
-@testable import my_library
+@testable import myLibrary
 
-final class my_libraryTests: XCTestCase {
+final class myLibraryTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct

@@ -7,8 +7,8 @@ package-update:
 build-release:
 	swift build -c release
 build-tests:
-	swift Sources/my-library/my_library.swift
+	swift ./Sources/myLibrary/myLibrary.swift
 run-tests:
-	@./my_library
+	@./myLibrary
 clean-build:
 	rm -rf .build
