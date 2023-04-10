@@ -1,5 +1,5 @@
 export TOOLCHAINS=swift
-all: submodules package-update build-release test
+all: myLibrary submodules package-update build-release test
 submodules:
 	git submodule update --init --recursive
 package-update:
@@ -11,6 +11,6 @@ test:
 clean-build:
 	rm -rf .build
 	rm -rf Package.resolved
-myLibrary: all
+myLibrary:
 	swiftc Sources/myLibrary/myLibrary.swift
 	chmod +x myLibrary
